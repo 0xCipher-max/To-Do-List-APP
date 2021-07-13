@@ -8,7 +8,7 @@ This is a simple Web-App Designed in Javascript.
   <li>Express JS</li>
   <li> CSS </li>
 </ul>
-# How to run on your PC
+# How to run on your PC<br>
 1. Clone this repository as follows<br>
 
 git clone https://github.com/0xCipher-max/To-Do-List-APP.git
@@ -17,7 +17,6 @@ git clone https://github.com/0xCipher-max/To-Do-List-APP.git
 ```
 npm install
 ```
-<br>
 3. Run the server using node (or nodemon)
 ```
 node app.js
