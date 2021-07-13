@@ -21,8 +21,8 @@ npm install
 ```
 node app.js
 ```
-<br>
 4. Go to browser and type
 ```
 localhost:3000
 ```
+<br>
