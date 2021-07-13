@@ -10,7 +10,7 @@ This is a simple Web-App Designed in Javascript.
 </ul>
 # How to run on your PC
 1. Clone this repository as follows<br>
-```
+
 git clone https://github.com/0xCipher-max/To-Do-List-APP.git
 
 ```
