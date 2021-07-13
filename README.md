@@ -25,3 +25,4 @@ node app.js
 4. Go to browser and type
 ```
 localhost:3000
+```
