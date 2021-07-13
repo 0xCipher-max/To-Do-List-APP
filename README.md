@@ -8,11 +8,11 @@ This is a simple Web-App Designed in Javascript.
   <li>Express JS</li>
   <li> CSS </li>
 </ul>
-# How to run on your PC<br>
+# How to run on your PC
 1. Clone this repository as follows<br>
-
+```
 git clone https://github.com/0xCipher-max/To-Do-List-APP.git
-<br>
+```
 2. Install Node Dependencies by <br>
 ```
 npm install
