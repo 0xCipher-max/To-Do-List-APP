@@ -1,14 +1,14 @@
-const express = require("express");
-const bodyParser = require("body-parser");
+const express = require("express");   //import the express package
+const bodyParser = require("body-parser");   // import the body-parser package
 
-const app = express();
+const app = express();   // initialize express
 
-app.set("view engine", "ejs");
+app.set("view engine", "ejs");    // set view engine
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({extended: "true"}))
 
-let today = new Date();
+let today = new Date();  //date object
 let homeItems = ["Buy Food", "Cook Food", "Eat Food"];
 let workItems = [];
 // let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -21,11 +21,11 @@ let options = {
     month: "long"
 };
 
-let day = today.toLocaleDateString("en-US", options);
+let day = today.toLocaleDateString("en-US", options);  
 
 app.get("/", (req,res) => {
     res.render("list", {listTitle: day, items: homeItems});
-});
+});   //initial home route
 
 
 app.post("/", (req, res) => {
@@ -46,7 +46,7 @@ app.get("/work", (req, res) => {
     res.render("list", {listTitle: "Work List", items: workItems})
     // res.send("HelloWorld");
     // res.render("list", {listTitle: day, items: homeItems});
-});
+});   // /eork route
 
 app.post("/work", (res, req) => {
     let item = req.body.newItem;
@@ -57,4 +57,4 @@ app.post("/work", (res, req) => {
 
 app.listen(8000, () => {
     console.log("Server is listening at port 3000");
-})
+})    //start app
